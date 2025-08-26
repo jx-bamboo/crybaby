@@ -1,0 +1,12 @@
+<% content_for :title, "Editing rune" %>
+
+<h1>Editing rune</h1>
+
+<%= render "form", rune: @rune %>
+
+<br>
+
+<div>
+  <%= link_to "Show this rune", @rune %> |
+  <%= link_to "Back to runes", runes_path %>
+</div>

@@ -1,0 +1,51 @@
+<style>
+    .form-control::placeholder {
+        color: #adb5bd;
+        opacity: 1;
+    }
+</style>
+<%= form_with(model: rune) do |form| %>
+  <% if rune.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(rune.errors.count, "error") %> prohibited this events from being saved:</h2>
+
+      <ul>
+        <% rune.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <% if notice %>
+      <div class="alert alert-warning" role="alert">
+        <%= notice %>
+      </div>
+    <% end %>
+  </div>
+
+
+  <div class="input-group mb-3">
+    <%= form.label :social, style: "display: block", class: "input-group-text text-secondary text-bg-dark border-secondary" %>
+    <%= form.text_field :social, class: "form-control text-bg-dark border-secondary", placeholder: "twitter, telegram, tiktok, instagram, wechat, qq..." %>
+  </div>
+
+  <div class="input-group mb-3">
+    <%= form.label :username, style: "display: block", class: "input-group-text text-secondary text-bg-dark border-secondary" %>
+    <%= form.text_field :username, class: "form-control text-bg-dark border-secondary", placeholder: "Enter your social username" %>
+  </div>
+
+  <div class="input-group mb-3">
+    <%= form.label :principal, style: "display: block", class: "input-group-text text-secondary text-bg-dark border-secondary" %>
+    <%= form.text_field :principal, class: "form-control text-bg-dark border-secondary", placeholder: "Enter your Odin principal" %>
+  </div>
+
+  <div class="input-group mb-3">
+    <%= form.label :link, style: "display: block", class: "input-group-text text-secondary text-bg-dark border-secondary" %>
+    <%= form.text_field :link, class: "form-control text-bg-dark border-secondary", placeholder: "Enter your social task link" %>
+  </div>
+
+  <div class="input-group mb-3">
+    <%= form.submit "Submit", class: "btn btn-outline-warning" %>
+  </div>
+<% end %>

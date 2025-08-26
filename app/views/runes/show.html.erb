@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @rune %>
+
+<div>
+  <%= link_to "Edit this rune", edit_rune_path(@rune) %> |
+  <%= link_to "Back to runes", runes_path %>
+
+  <%= button_to "Destroy this rune", @rune, method: :delete %>
+</div>

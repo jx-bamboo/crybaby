@@ -1,0 +1,25 @@
+
+<nav class="navbar navbar-expand" aria-label="Second navbar example">
+  <div class="container-fluid">
+    <a class="navbar-brand navbar text-light" href="/">
+      <span class="logo-text">CRYBABY</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"> <%= link_to "EVENTS", events_home_index_path, class: "nav-link text-secondary", aria_current: "page" %> </li>
+        <li class="nav-item"> <%= link_to "AIRDROP", "javascript:alert('coming soon!')", class: "nav-link text-secondary" %> </li>
+      </ul>
+
+      <a class="btn btn-sm btn-warning py-2 px-2 navbar fw-bold text-nowrap" href="javascript:alert('coming soon!')">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+          <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" />
+        </svg>
+        &nbsp;&nbsp;Connect
+      </a>
+    </div>
+  </div>
+</nav>

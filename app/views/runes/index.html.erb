@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Runes" %>
+
+<h1>Runes</h1>
+
+<div id="runes">
+  <% @runes.each do |rune| %>
+    <%= render rune %>
+    <p>
+      <%= link_to "Show this rune", rune %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New rune", new_rune_path %>

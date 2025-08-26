@@ -1,0 +1,52 @@
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-12">
+      <%= image_tag "runes_tmin.jpg", alt: "Events", class: "img-fluid rounded" %>
+    </div>
+  </div>
+
+  <div class="row my-5"> 
+    <div class="col col-sm-5 mb-3">
+      <%= image_tag "runes_lmin.jpeg", alt: "Events", class: "img-fluid rounded" %>
+    </div>
+    <div class="col col-sm-7 text-start">
+      <h3 class="mb-3">Events</h3>
+
+      <!-- -->
+      <div class="cyber-card p-4 rounded">
+
+        <div class="input-group mb-3">
+          <label class="input-group-text text-secondary bg-dark border-secondary" for="inputGroupSelect01">Social</label>
+          <select class="form-select text-secondary text-bg-dark border-secondary" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">X(Twitter)</option>
+            <option value="2">Telegram</option>
+            <option value="3">TikTok</option>
+            <option value="4">Instagram</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text text-secondary text-bg-dark border-secondary" id="inputGroup-sizing-default">Social Username</span>
+          <input type="text" class="form-control text-bg-dark border-secondary" placeholder="Enter your username" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text text-secondary text-bg-dark border-secondary" id="inputGroup-sizing-default">Odin Principal</span>
+          <input type="text" class="form-control text-bg-dark border-secondary" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text text-secondary text-bg-dark border-secondary" id="inputGroup-sizing-default">Active Link</span>
+          <input type="text" class="form-control text-bg-dark border-secondary" placeholder="Enter the link" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div>
+          <%= submit_tag "Submit", class: "btn btn-outline-warning" %>
+        </div>
+
+      </div>
+      <!-- -->
+    </div>
+  </div>
+</div>
