@@ -7,7 +7,8 @@ image: jxbamboo/crybaby
 # Deploy to these servers.
 servers:
   web:
-    - 120.229.29.81
+    hosts:
+      - cry
   # job:
   #   hosts:
   #     - 192.168.0.1
